@@ -38,6 +38,7 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  console.log("check");
   try {
     const createCategoryData = await Category.create(req.body);
     // 200 status code means the request is successful
